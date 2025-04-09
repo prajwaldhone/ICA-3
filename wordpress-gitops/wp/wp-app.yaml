@@ -1,0 +1,18 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: wp-app
+  namespace: argocd
+spec:
+  destination:
+    namespace: wp
+    server: https://kubernetes.default.svc
+  source:
+    repoURL: https://github.com/prajwaldhone/ICA-3/tree/main/wordpress-gitops
+    targetRevision: HEAD
+    path: wp/helm-chart
+  project: default
+  syncPolicy:
+    automated:
+      selfHeal: true
+      prune: true
