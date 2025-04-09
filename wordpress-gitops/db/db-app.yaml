@@ -8,7 +8,7 @@ spec:
     namespace: db
     server: https://kubernetes.default.svc
   source:
-    repoURL: https://https://github.com/prajwaldhone/ICA-3/tree/main/wordpress-gitops
+    repoURL: https://github.com/prajwaldhone/ICA-3/tree/main/wordpress-gitops
     targetRevision: HEAD
     path: db/helm-chart
   project: default
