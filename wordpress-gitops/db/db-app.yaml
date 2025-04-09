@@ -10,7 +10,7 @@ spec:
   source:
     repoURL: https://github.com/prajwaldhone/ICA-3/tree/main/wordpress-gitops
     targetRevision: HEAD
-    path: db/helm-chart
+    path: wordpress-gitops/db/helm-chart
   project: default
   syncPolicy:
     automated:
